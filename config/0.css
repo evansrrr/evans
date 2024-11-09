@@ -9,13 +9,13 @@
 }
 
 * {
+    --tw-ring-color: rgba(59, 130, 246, .5);
     --tw-ring-inset: var(--tw-empty, );
     --tw-ring-offset-width: 0px;
     --tw-ring-offset-color: #fff;
-    --tw-ring-color: rgba(59, 130, 246, .5);
     --tw-ring-offset-shadow: 0 0 #0000;
     --tw-ring-shadow: 0 0 #0000;
-    --tw-shadow: 0 0 #0000
+    --tw-shadow: 0 0 #0000 scrollbar-color: var(--scrollbar-thumb-color) var(--scrollbar-track-color)
 }
 
 :root {
@@ -24,46 +24,10 @@
     tab-size: 4
 }
 
-:-moz-focusring {
-    outline: 1px dotted ButtonText
-}
-
-:-moz-ui-invalid {
-    box-shadow: none
-}
-
-::moz-focus-inner {
-    border-style: none;
-    padding: 0
-}
-
-::-webkit-inner-spin-button,
-::-webkit-outer-spin-button {
-    height: auto
-}
-
-::-webkit-search-decoration {
-    -webkit-appearance: none
-}
-
-::-webkit-file-upload-button {
-    -webkit-appearance: button;
-    font: inherit
-}
-
-[type=search] {
-    -webkit-appearance: textfield;
-    outline-offset: -2px
-}
-
-abbr[title] {
-    -webkit-text-decoration: underline dotted;
-    text-decoration: underline dotted
-}
-
-a {
-    color: inherit;
-    text-decoration: inherit
+html {
+    -webkit-text-size-adjust: 100%;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, apple color emoji, segoe ui emoji, Segoe UI Symbol, noto color emoji;
+    line-height: 1.5
 }
 
 body {
@@ -72,10 +36,9 @@ body {
     line-height: inherit
 }
 
-html {
-    -webkit-text-size-adjust: 100%;
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, apple color emoji, segoe ui emoji, Segoe UI Symbol, noto color emoji;
-    line-height: 1.5
+a {
+    color: inherit;
+    text-decoration: inherit
 }
 
 h1,
@@ -88,23 +51,12 @@ h2 {
 img {
     border-style: solid;
     max-width: 100%;
-    height: auto
 }
 
 svg,
 img {
-    display: block;
+    display: inline-block;
     vertical-align: middle
-}
-
-.aspect-square {
-    aspect-ratio: 1/1
-}
-
-@media(min-width:768px) {
-    .md\:aspect-square {
-        aspect-ratio: 1/1
-    }
 }
 
 .bg-hex-383934 {
@@ -197,12 +149,6 @@ img {
     align-items: center
 }
 
-.self-start {
-    -ms-flex-item-align: start;
-    -webkit-align-self: flex-start;
-    align-self: flex-start
-}
-
 .justify-between {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -217,12 +163,6 @@ img {
     flex: 1 1 0%
 }
 
-.flex-shrink-0 {
-    -ms-flex-negative: 0;
-    -webkit-flex-shrink: 0;
-    flex-shrink: 0
-}
-
 .font-extrabold {
     font-weight: 800
 }
@@ -233,26 +173,6 @@ img {
 
 .font-semibold {
     font-weight: 600
-}
-
-.h-auto {
-    height: auto
-}
-
-.h-full {
-    height: 100%
-}
-
-.h-120px {
-    height: 120px
-}
-
-.h-200px {
-    height: 200px
-}
-
-.h-100px {
-    height: 100px
 }
 
 .text-xs {
@@ -409,14 +329,6 @@ img {
     letter-spacing: .05em
 }
 
-.w-full {
-    width: 100%
-}
-
-.w-120px {
-    width: 120px
-}
-
 .gap-30px {
     grid-gap: 30px;
     gap: 30px
@@ -445,28 +357,6 @@ img {
 .gap-40px {
     grid-gap: 40px;
     gap: 40px
-}
-
-.grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr))
-}
-
-.grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr))
-}
-
-.grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr))
-}
-
-.auto-cols-min {
-    grid-auto-columns: -webkit-min-content;
-    grid-auto-columns: min-content
-}
-
-.auto-rows-min {
-    grid-auto-rows: -webkit-min-content;
-    grid-auto-rows: min-content
 }
 
 @media(min-width:768px) {
@@ -567,19 +457,15 @@ body {
     font-family: Open Sans, sans-serif
 }
 
-* {
-    scrollbar-color: var(--scrollbar-thumb-color) var(--scrollbar-track-color)
+header.svelte-1ena5bt {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 0
 }
 
-::-webkit-scrollbar {
-    width: 10px;
-    background-color: var(--scrollbar-track-color)
-}
-
-::-webkit-scrollbar-track {
-    background-color: var(--scrollbar-track-color)
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: var(--scrollbar-thumb-color)
+.main.svelte-16y6iu1 {
+    z-index: 1;
+    transform: translateZ(0);
+    -webkit-transform: translate3d(0, 0, 0)
 }
